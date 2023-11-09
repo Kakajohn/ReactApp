@@ -1,0 +1,15 @@
+.login {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background-color: #daa520;
+    padding: 24px 20px;
+    margin: 20px 24px;
+    font-size: 28px;
+    border-radius: 0.5rem;
+
+
+    &__body {
+        width: 100%;
+    }
+}
