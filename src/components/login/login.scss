@@ -2,14 +2,56 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    background-color: #daa520;
+    background-color: #fbaf08;
     padding: 24px 20px;
     margin: 20px 24px;
     font-size: 28px;
     border-radius: 0.5rem;
 
 
+
+
     &__body {
         width: 100%;
+    }
+
+    &__inputs {
+        border-radius: 0.3rem;
+        outline: unset;
+        border: 1.4px solid #c89666;
+    }
+
+    &__username,
+    &__password {
+        display: flex;
+        gap: 6px;
+        margin: 4px;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+
+    }
+
+    &__confirm-button {
+        width: 6rem;
+        height: auto;
+        align-items: center;
+        color: #fff;
+        font-size: 16px;
+        background-color: #c89666;
+        border: 2px solid #fbaf08;
+        border-radius: 0.6rem;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #fbaf08;
+            border: 2px solid #c89666;
+        }
+    }
+}
+
+.social {
+    &__icon {
+        width: 20px;
+        height: 20px;
     }
 }

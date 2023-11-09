@@ -1,9 +1,10 @@
 import React from 'react';
 import './login.scss';
 import '../generalStyles/main.scss';
+import logo from '../../assets/social/instalogo.jpeg';
 
 const randomNumberInRange = () => {
-  return Math.floor(Math.random() * 100 + 30);
+  return Math.floor(Math.random() * 1000 + 30);
 };
 
 const num = randomNumberInRange();
@@ -21,16 +22,21 @@ function Login() {
             <div className='login__placeholders'>
               <div className='login__username'>
                 <label htmlFor=''>Enter username :</label>
-                <input type='text' />
+                <input className='login__inputs' type='text' />
               </div>
               <div className='login__password'>
                 <label htmlFor=''>Enter password :</label>
-                <input type='password' />
+                <input className='login__inputs' type='password' />
               </div>
               <div className='login__confirm'>
                 <button className='login__confirm-button'>Confirm</button>
               </div>
             </div>
+          </div>
+          <div className='social'>
+            <a href='/' className='social__link'>
+              <img className='social__icon' src={logo} alt='find us' />
+            </a>
           </div>
         </div>
       </div>
