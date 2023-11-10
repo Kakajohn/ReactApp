@@ -2,14 +2,72 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    background-color: #daa520;
+    background-color: #fbc117;
     padding: 24px 20px;
     margin: 20px 24px;
     font-size: 28px;
     border-radius: 0.5rem;
 
+    @media(max-width:992px) {
+        font-size: 18px;
+    }
+
+
+
 
     &__body {
         width: 100%;
+    }
+
+    &__inputs {
+        border-radius: 0.3rem;
+        outline: unset;
+        border: 1.4px solid #c89666;
+    }
+
+    &__username,
+    &__password {
+        display: flex;
+        gap: 6px;
+        margin: 4px;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+
+    }
+
+    &__confirm {
+        @media(max-width:992px) {
+            text-align: center;
+        }
+    }
+
+    &__confirm-button {
+        width: 6rem;
+        height: auto;
+        align-items: center;
+        color: #fff;
+        font-size: 16px;
+        background-color: #c89666;
+        border: 2px solid #fbc117;
+        border-radius: 0.6rem;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #fbc117;
+            border: 2px solid #c89666;
+        }
+    }
+
+    &__header-logo {
+        width: 100px;
+        height: auto;
+    }
+}
+
+.social {
+    &__icon {
+        width: 20px;
+        height: 20px;
+        padding: 14px;
     }
 }
