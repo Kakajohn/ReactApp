@@ -2,11 +2,15 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    background-color: #fbaf08;
+    background-color: #fbc117;
     padding: 24px 20px;
     margin: 20px 24px;
     font-size: 28px;
     border-radius: 0.5rem;
+
+    @media(max-width:992px) {
+        font-size: 18px;
+    }
 
 
 
@@ -31,6 +35,12 @@
 
     }
 
+    &__confirm {
+        @media(max-width:992px) {
+            text-align: center;
+        }
+    }
+
     &__confirm-button {
         width: 6rem;
         height: auto;
@@ -38,14 +48,19 @@
         color: #fff;
         font-size: 16px;
         background-color: #c89666;
-        border: 2px solid #fbaf08;
+        border: 2px solid #fbc117;
         border-radius: 0.6rem;
         cursor: pointer;
 
         &:hover {
-            background-color: #fbaf08;
+            background-color: #fbc117;
             border: 2px solid #c89666;
         }
+    }
+
+    &__header-logo {
+        width: 100px;
+        height: auto;
     }
 }
 
@@ -53,5 +68,6 @@
     &__icon {
         width: 20px;
         height: 20px;
+        padding: 14px;
     }
 }
